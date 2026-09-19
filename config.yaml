@@ -1,0 +1,35 @@
+# FAERS Drug Safety Signal Detection — configuration
+
+data:
+  source: "auto"              # "openfda" | "synthetic" | "auto" (tries openFDA, falls back to synthetic)
+  openfda_endpoint: "https://api.fda.gov/drug/event.json"
+  openfda_query_drugs:        # drugs to pull real reports for when source=openfda
+    - "simvastatin"
+    - "warfarin"
+    - "metformin"
+    - "lisinopril"
+    - "ibuprofen"
+    - "clozapine"
+    - "ciprofloxacin"
+    - "isotretinoin"
+  synthetic:
+    n_reports: 20000
+    random_seed: 42
+    raw_csv: "data/faers_reports_synthetic.csv"
+
+disproportionality:
+  min_case_count: 3           # Evans criteria: minimum cases per drug-reaction pair
+  prr_threshold: 2.0           # Evans criteria: PRR >= 2
+  chi2_threshold: 4.0          # Evans criteria: chi-square >= 4
+
+predictive_model:
+  test_size: 0.2
+  random_state: 42
+  n_estimators: 300
+  max_depth: 4
+  learning_rate: 0.05
+
+nlp:
+  max_features: 3000
+  test_size: 0.2
+  random_state: 42
