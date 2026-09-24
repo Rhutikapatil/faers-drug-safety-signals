@@ -1,4 +1,10 @@
 # FAERS Drug Safety Signal Detection
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-data%20analysis-150458?logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)
+![NLP](https://img.shields.io/badge/NLP-TF--IDF%20%2B%20Logistic%20Regression-6A5ACD)
+![openFDA](https://img.shields.io/badge/openFDA-API-0A6EBD)
+![Docker](https://img.shields.io/badge/Docker-containerized-2496ED?logo=docker&logoColor=white)
 
 A pharmacovigilance pipeline that runs three complementary analyses on
 adverse-event reports: statistical **disproportionality (signal detection)**,
