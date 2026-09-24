@@ -95,6 +95,22 @@ fetch_data → disproportionality → predictive_model → nlp_narrative
 | Predictive model | Gradient-boosted trees on age/sex/drug class/reaction/year | `results/figures/02_roc_curve.png`, `results/figures/03_feature_importance.png`, `results/model_card.md` |
 | NLP baseline | TF-IDF + logistic regression on narrative text alone | `results/figures/04_nlp_top_tokens.png`, `results/nlp_report.txt` |
 
+## Project Status
+
+| Component | Status |
+| --- | --- |
+| Synthetic FAERS-style data generation | ✅ Implemented |
+| Disproportionality analysis (PRR / ROR / chi-square) | ✅ Implemented |
+| Signal-detection validation | ✅ Completed |
+| Structured-data seriousness model | ✅ Implemented |
+| NLP narrative seriousness model | ✅ Implemented |
+| ROC-AUC and PR-AUC evaluation | ✅ Completed |
+| Feature importance analysis | ✅ Completed |
+| Docker environment | ✅ Configured |
+| openFDA API integration | ✅ Implemented |
+| Live openFDA execution in this build | ⚠️ Not executed |
+| Real narrative-bearing FAERS dataset | ⚠️ Not included |
+
 ## Results (synthetic data, n = 20,000 reports)
 
 **Signal detection validation** — the whole point of building this against
