@@ -142,6 +142,26 @@ openFDA drug query list in `config.yaml`.
 Python · pandas/NumPy · scikit-learn · TF-IDF/logistic regression ·
 gradient-boosted trees · openFDA API · Docker
 
+## Skills Demonstrated
+
+- Pharmacovigilance analytics
+- Adverse-event signal detection
+- FAERS-style safety data analysis
+- Disproportionality analysis
+- Proportional Reporting Ratio (PRR)
+- Reporting Odds Ratio (ROR)
+- Chi-square signal testing
+- Python data analysis with pandas and NumPy
+- Machine learning with scikit-learn
+- Gradient-boosted classification
+- NLP with TF-IDF and logistic regression
+- ROC-AUC and PR-AUC evaluation
+- Feature importance analysis
+- openFDA API integration
+- Synthetic healthcare data generation
+- Reproducible pipeline design
+- Docker containerization
+
 ## Author
 
 Rhutika Patil — M.S. Bioinformatics, NC State University
