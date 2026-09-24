@@ -81,11 +81,7 @@ fetch_data → disproportionality → predictive_model → nlp_narrative
 calibrated synthetic data first: does the statistical method actually find
 what it's supposed to find?
 
-> Tested 660 drug-reaction pairs → flagged 18 as signals (PRR ≥ 2, χ² ≥ 4,
-> ≥ 3 cases) → **recovered 17/17 (100%)** of the literature-documented
-> signals baked into the data, plus one additional pair (Apixaban–
-> Hepatotoxicity) that did not clear the threshold and was correctly left
-> unflagged.
+> Tested 660 drug-reaction pairs → flagged 18 as signals (PRR ≥ 2, χ² ≥ 4, ≥ 3 cases) → **recovered 17/17 (100%)** of the literature-documented signals seeded into the synthetic data, with one additional drug-reaction pair also meeting the signal threshold.
 
 **Predictive model (structured fields):** ROC-AUC 0.756, PR-AUC 0.496.
 Reaction term dominates feature importance (expected — some reaction types
