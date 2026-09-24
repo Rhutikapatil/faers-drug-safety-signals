@@ -6,6 +6,11 @@
 ![openFDA](https://img.shields.io/badge/openFDA-API-0A6EBD)
 ![Docker](https://img.shields.io/badge/Docker-containerized-2496ED?logo=docker&logoColor=white)
 
+A pharmacovigilance pipeline that runs three complementary analyses on
+adverse-event reports: statistical **disproportionality (signal detection)**,
+a **predictive model** for report seriousness from structured fields, and an
+**NLP baseline** that predicts seriousness from free-text narrative alone.
+
 ## Project Highlights
 
 - Built an end-to-end pharmacovigilance pipeline for adverse-event signal detection
@@ -18,11 +23,6 @@
 - Parameterized data source, signal thresholds, and model settings through `config.yaml`
 - Containerized the workflow with Docker for reproducibility
 - Documented limitations and data-source assumptions directly in the project
-
-A pharmacovigilance pipeline that runs three complementary analyses on
-adverse-event reports: statistical **disproportionality (signal detection)**,
-a **predictive model** for report seriousness from structured fields, and an
-**NLP baseline** that predicts seriousness from free-text narrative alone.
 
 ## Why this project
 
