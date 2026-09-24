@@ -6,6 +6,19 @@
 ![openFDA](https://img.shields.io/badge/openFDA-API-0A6EBD)
 ![Docker](https://img.shields.io/badge/Docker-containerized-2496ED?logo=docker&logoColor=white)
 
+## Project Highlights
+
+- Built an end-to-end pharmacovigilance pipeline for adverse-event signal detection
+- Implemented disproportionality analysis using PRR, ROR, confidence intervals, and chi-square statistics
+- Validated signal-detection logic against seeded drug–adverse-event relationships
+- Developed a structured-data seriousness prediction model using gradient-boosted trees
+- Built an NLP baseline using TF-IDF and logistic regression on narrative text
+- Compared predictive performance of structured features versus free-text narratives
+- Added support for both synthetic FAERS-style data and live openFDA API retrieval
+- Parameterized data source, signal thresholds, and model settings through `config.yaml`
+- Containerized the workflow with Docker for reproducibility
+- Documented limitations and data-source assumptions directly in the project
+
 A pharmacovigilance pipeline that runs three complementary analyses on
 adverse-event reports: statistical **disproportionality (signal detection)**,
 a **predictive model** for report seriousness from structured fields, and an
