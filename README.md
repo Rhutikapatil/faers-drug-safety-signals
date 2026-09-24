@@ -65,6 +65,26 @@ internet access to reproduce this whole pipeline on live FDA data.
 
 ## Pipeline
 
+```mermaid
+flowchart LR
+    A[FAERS-style Data Source] --> B[Fetch / Load Data]
+    B --> C[Disproportionality Analysis]
+    B --> D[Structured Predictive Model]
+    B --> E[NLP Narrative Model]
+
+    C --> F[PRR / ROR / Chi-square Signals]
+    D --> G[Seriousness Prediction]
+    E --> H[TF-IDF + Logistic Regression]
+
+    F --> I[Validation Tables & Signal Plot]
+    G --> J[ROC Curve & Feature Importance]
+    H --> K[NLP Token Analysis]
+
+    I --> L[Drug Safety Insights]
+    J --> L
+    K --> L
+```
+
 ```
 fetch_data → disproportionality → predictive_model → nlp_narrative
 ```
